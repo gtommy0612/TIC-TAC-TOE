@@ -1,0 +1,128 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F9FAFA;
+    color: #646464;
+    font-size: 16px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* style */
+input,
+.card,
+.gridSection {
+    border-style:solid;
+    border-width: 1px;
+    border-radius:4px;
+    border-color: #F0F0F0;
+    box-shadow:0px 2px 4px 0px #EFF0F0;
+}
+
+h1,
+span {
+    color: black;
+    font-weight: 700;
+}
+
+
+/* title */
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 35px;
+}
+
+.title > span {
+    font-size: 24px;
+    margin: 15px;
+}
+
+.title > input {
+    width: 132px;
+    height: 38px;
+    background-color: white;
+    font-size: 16px;
+    color: #646464;
+}
+
+/* content */
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 95px;
+}
+
+.card {
+    width: 160px;
+    height: 200px;
+    background-color: white;
+    border:1px;
+}
+
+.color01,
+.color02 {
+    position: absolute;  
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+}
+
+.color01 {
+    background-color: #D2E897;
+}
+.color02 {
+    background-color: #54B6FE;
+}
+
+.card > p {
+    position: relative;  
+    z-index: 2;
+    top: 125px;
+    left: 20px;
+}
+
+.card > h3 {
+    position: relative;  
+    z-index: 3;
+    top: 140px;
+    left: 20px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+/* gridSection */
+.gridSection {
+    background-color: rgb(220, 220, 220);
+    width: 400px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.gridSection,
+.grid {
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;   
+}
+
+/* footer */
+.footerSection {
+    width: 100vw;
+    height: 50px;
+    margin-top: 50px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
